@@ -22,11 +22,14 @@ function RouteComponent() {
             <Box sx={{display: "flex", flexDirection: "row", gap: 2, flexWrap: "wrap"}}>
                 {
                     signs.map(sign => (
-                        <SignCard signId={sign.signId.toString()} fileName={sign.fileName}
-                                  categoryId={sign.categoryId.toString()} categoryName={sign.categoryName}
-                                  translations={sign.translations}>
-
-                        </SignCard>
+                        <SignCard
+                            key={sign.signId}
+                            signId={sign.signId.toString()}
+                            fileName={sign.fileName}
+                            categoryId={sign.categoryId.toString()}
+                            categoryName={sign.categoryName}
+                            translations={sign.translations}
+                        />
                     ))
                 }
             </Box>

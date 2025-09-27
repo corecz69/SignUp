@@ -7,7 +7,7 @@ interface Props {
 }
 
 export function SubjectCard({id, name, categoryCount, studentCount}: Props){
-    //TODO přidat onClick, přesměrování na detail předmětu podle id.
+    {/* TODO přidat onClick, přesměrování na detail předmětu podle id. */}
 
     return (
         <Card sx={{

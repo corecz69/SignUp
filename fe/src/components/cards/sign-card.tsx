@@ -17,7 +17,7 @@ export function SignCard({signId, fileName, categoryId, categoryName, translatio
             gap: 2,
             mb: 2
         }}>
-            //TODO routing
+            {/* TODO routing */}
             <CardActionArea onClick={() => console.log("jdeme na znak s id: " + signId)}>
                 <CardMedia
                     component="video"
@@ -33,7 +33,7 @@ export function SignCard({signId, fileName, categoryId, categoryName, translatio
                     <Stack>
                         <Button onClick={(event) => {
                             event.stopPropagation();
-                            //TODO routing
+                            {/* TODO routing */}
                             console.log("jdeme na kategorii s id: " + categoryId);
                         }}>{categoryName}</Button>
                         <Stack direction="row" spacing={1} flexWrap="wrap" useFlexGap >
