@@ -26,8 +26,8 @@ export function UserCard({id, name, email, classname}: Props){
                 </Stack>
             </CardContent>
             <CardActions>
+                {/* TODO routing */}
                 <Button size="small"
-                        {/* TODO routing */}
                         onClick={() => console.log("jde se na detail osoby s id: " + id)}
                 >Detail</Button>
             </CardActions>

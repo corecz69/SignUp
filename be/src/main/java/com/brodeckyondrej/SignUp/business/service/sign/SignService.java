@@ -9,16 +9,22 @@ import com.brodeckyondrej.SignUp.business.service.universal.EntityService;
 import com.brodeckyondrej.SignUp.persistence.entity.Category;
 import com.brodeckyondrej.SignUp.persistence.entity.PrivateCollection;
 import com.brodeckyondrej.SignUp.persistence.entity.Sign;
+import com.brodeckyondrej.SignUp.persistence.entity.SignComponent;
+import com.brodeckyondrej.SignUp.persistence.enumerated.LanguageLevel;
+import com.brodeckyondrej.SignUp.persistence.enumerated.Region;
+import com.brodeckyondrej.SignUp.persistence.enumerated.SignType;
 import com.brodeckyondrej.SignUp.persistence.repository.CategoryRepository;
 import com.brodeckyondrej.SignUp.persistence.repository.PrivateCollectionRepository;
+import com.brodeckyondrej.SignUp.persistence.repository.SignComponentRepository;
 import com.brodeckyondrej.SignUp.persistence.repository.SignRepository;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Optional;
-import java.util.UUID;
+import java.util.*;
+import java.util.stream.Collectors;
 
 @Service
 @Transactional
